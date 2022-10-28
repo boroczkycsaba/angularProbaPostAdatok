@@ -1,0 +1,33 @@
+th, td {
+  padding-left: 20px;
+  word-wrap: break-word;
+  min-width: 100px;
+  max-width: 500px;
+}
+
+th {
+  font-size: large;
+  font-family: "Nimbus Sans";
+}
+
+td {
+  font-size: medium;
+  font-family: SansSerif;
+}
+
+h1 {
+  font-size: xx-large;
+  font-family: SansSerif;
+}
+
+h2 {
+  font-size: x-large;
+  font-family: "Nimbus Sans";
+}
+
+button {
+  background-color: lightgrey;
+  border-radius: 8px;
+  font-size: large;
+  font-family: SansSerif;
+}

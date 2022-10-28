@@ -1,0 +1,44 @@
+<h2>Post adatok részletesen</h2>
+
+<div *ngIf="postShowAdat != undefined" class="adatMegjelenitesDiv">
+
+  <table>
+    <tr>
+      <td>
+        User id:
+      </td>
+      <td>
+        {{postShowAdat.userId}}
+      </td>
+    <tr>
+    <tr class="adatMegjelenitesTavolsag">
+      <td>
+        id:
+      </td>
+      <td>
+        {{postShowAdat.id}}
+      </td>
+    </tr>
+    <tr class="adatMegjelenitesTavolsag">
+      <td>
+        Cím:
+      </td>
+      <td>
+        {{postShowAdat.title}}
+      </td>
+    </tr>
+    <tr class="adatMegjelenitesTavolsag">
+      <td>
+        Leírás:
+      </td>
+      <td>
+        {{postShowAdat.body}}
+      </td>
+    </tr>
+  </table>
+
+  <div class="adatMegjelenitesTavolsag">
+    <button type="button" (click)="adatReszBezarasa()" class="buttonBezar">Ablak bezárása</button>
+  </div>
+
+</div>

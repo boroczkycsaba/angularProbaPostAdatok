@@ -1,0 +1,31 @@
+<h2>Lekérdezett post adatok</h2>
+
+<table>
+  <thead>
+  <tr>
+    <th>
+      Címek
+    </th>
+    <th>
+      &nbsp;
+    </th>
+    <th>
+      &nbsp;
+    </th>
+  </tr>
+  </thead>
+  <ng-container *ngFor="let postAdat of postAdatok; odd as isOdd; even as isEven;">
+    <tr [ngClass]="{ 'sorParatlan': isEven , 'sorParos':  isOdd }">
+      <td>
+        {{postAdat.title}}
+      </td>
+      <td>
+        <button type="button" (click)="reszletesAdatokNav(postAdat)"  class="buttonOk">Adat megjelenítése</button>
+      </td>
+      <td>
+        <button type="button" (click)="adatTorlese(postAdat)" class="buttonDanger">Törlés</button>
+      </td>
+    </tr>
+  </ng-container>
+</table>
+
